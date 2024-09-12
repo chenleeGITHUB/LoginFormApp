@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, TextInput, Button, KeyboardAvoidingView, Image, Platform } from "react-native";
 import React, {useState} from 'react';
 
@@ -6,7 +6,7 @@ const LoginForm = () => {
   const [username, setUsername]=useState("");
   const [password, setPassword]=useState("");
   const [errors, setErrors] = useState({});
-}
+
 
 const validateForm =()=> {
   let errors ={}
@@ -27,6 +27,7 @@ const handleSubmit= () => {
     setErrors("");
   }
 };
+}
 
 return(
   <KeyboardAvoidingView
