@@ -24,10 +24,9 @@ const handleSubmit= () => {
     console.log("Submitted", username, password);
     setUsername("");
     setPassword("");
-    setErrors("");
+    setErrors({});
   }
 };
-}
 
 return(
   <KeyboardAvoidingView
@@ -73,6 +72,7 @@ return(
          </KeyboardAvoidingView>
 
 );
+};
 
 
 
